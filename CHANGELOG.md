@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v1.4.0](https://github.com/voxpupuli/puppet-anubis/tree/v1.4.0) (2026-06-09)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-anubis/compare/v1.3.0...v1.4.0)
+
+**Implemented enhancements:**
+
+- Add `puppet/archive` dependency to stage Debian `.deb` packages via download before `dpkg` install
+- Add configurable `staging_dir` parameter (default `/tmp`) for Debian download staging path
+- Add module-level Hiera data hierarchy (`data/common.yaml`, `data/os/Debian.yaml`, `data/os/RedHat.yaml`)
+- Expand rspec-puppet test suite to 205 examples with 100% resource coverage
+- Add beaker acceptance tests with libvirt nodesets (Debian 11/12, CentOS 9)
+- Bump `voxpupuli-test` to `~> 14.0`, `voxpupuli-acceptance` to `~> 4.4`, `voxpupuli-release` to `~> 5.3`
+
 ## [v1.3.0](https://github.com/voxpupuli/puppet-anubis/tree/v1.3.0) (2026-06-09)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-anubis/compare/v1.2.0...v1.3.0)

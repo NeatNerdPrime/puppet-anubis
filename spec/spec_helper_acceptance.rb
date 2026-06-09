@@ -1,10 +1,28 @@
 # frozen_string_literal: true
 
-# Managed by modulesync - DO NOT EDIT
-# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
+# SPDX-FileCopyrightText: 2026 Vox Pupuli
+# SPDX-License-Identifier: Apache-2.0
 
 require 'voxpupuli/acceptance/spec_helper_acceptance'
 
-configure_beaker(modules: :metadata)
+ENV['BEAKER_FACTER_FQDN'] = 'anubis.example.com'
 
-Dir['./spec/support/acceptance/**/*.rb'].sort.each { |f| require f }
+configure_beaker(modules: :fixtures)
+RSpec.configure do |c|
+  c.suite_hiera = true
+  c.suite_hiera_data_dir = File.join('spec', 'acceptance', 'data')
+  c.suite_hiera_hierachy = [
+    {
+      name: 'Per-node data',
+      path: 'nodes/%{facts.fqdn}.yaml',
+    },
+    {
+      name: 'OS family data',
+      path: 'os/%{facts.os.family}.yaml',
+    },
+    {
+      name: 'Common data',
+      path: 'common.yaml',
+    },
+  ]
+end

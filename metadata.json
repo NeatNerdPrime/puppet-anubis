@@ -2,10 +2,14 @@
   "author": "Vox Pupuli",
   "license": "MIT",
   "name": "puppet-anubis",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "summary": "A Puppet module to install Anubis",
   "source": "https://github.com/voxpupuli/puppet-anubis",
   "dependencies": [
+    {
+      "name": "puppet-archive",
+      "version_requirement": ">= 7.0.0 < 8.0.0"
+    },
     {
       "name": "puppetlabs-stdlib",
       "version_requirement": ">= 4.25.0 < 10.0.0"

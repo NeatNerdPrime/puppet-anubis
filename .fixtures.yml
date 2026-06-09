@@ -2,3 +2,4 @@
 fixtures:
   repositories:
     stdlib: https://github.com/puppetlabs/puppetlabs-stdlib
+    archive: https://github.com/voxpupuli/puppet-archive

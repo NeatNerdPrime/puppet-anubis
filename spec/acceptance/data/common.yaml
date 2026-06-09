@@ -1,0 +1,10 @@
+---
+###############################################################################
+#
+# Acceptance test hiera data — common defaults
+#
+###############################################################################
+anubis::package_name: 'anubis'
+anubis::package_version: '1.23.1'
+anubis::package_ensure: 'present'
+anubis::package_provider: ~

@@ -1,0 +1,3 @@
+---
+# RedHat family: use RPM native provider (undef = default for package type)
+anubis::package_provider: ~
