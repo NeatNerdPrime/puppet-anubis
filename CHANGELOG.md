@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v1.3.0](https://github.com/voxpupuli/puppet-anubis/tree/v1.3.0) (2026-06-09)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-anubis/compare/v1.2.0...v1.3.0)
+
+**Implemented enhancements:**
+
+- Add Debian and Ubuntu support (Debian 11/12, Ubuntu 22.04/24.04)
+- Install `.deb` packages from GitHub releases on Debian/Ubuntu
+- Map RPM architecture names (`x86_64`/`aarch64`) to DEB names (`amd64`/`arm64`)
+- Set `provider => dpkg` explicitly on Debian family
+
 ## [v1.2.0](https://github.com/voxpupuli/puppet-anubis/tree/v1.2.0) (2025-12-17)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-anubis/compare/v1.1.0...v1.2.0)

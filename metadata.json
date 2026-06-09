@@ -2,7 +2,7 @@
   "author": "Vox Pupuli",
   "license": "MIT",
   "name": "puppet-anubis",
-  "version": "1.2.1-rc0",
+  "version": "1.3.0",
   "summary": "A Puppet module to install Anubis",
   "source": "https://github.com/voxpupuli/puppet-anubis",
   "dependencies": [
@@ -50,6 +50,20 @@
       "operatingsystem": "Rocky",
       "operatingsystemrelease": [
         "9"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "22.04",
+        "24.04"
       ]
     }
   ]
